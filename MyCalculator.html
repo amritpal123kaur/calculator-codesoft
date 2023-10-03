@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="inner" style="display: flex">
+        <input type="text" id="response" />
+        <input type="button" class="back" value="⌫" onclick="Back('⌫')" />
+      </div>
+      <div class="calculator">
+        <input
+          type="button"
+          value="C"
+          onclick="Clear('C')"
+          style="background-color: red"
+        />
+        <input type="button" value="00" onclick="fn('00')" />
+
+        <input type="button" value="+" onclick="fn('+')" />
+        <input type="button" value="1" onclick="fn('1')" />
+        <input type="button" value="2" onclick="fn('2')" />
+
+        <input type="button" value="-" onclick="fn('-')" />
+        <input type="button" value="3" onclick="fn('3')" />
+        <input type="button" value="4" onclick="fn('4')" />
+
+        <input type="button" value="*" onclick="fn('*')" />
+        <input type="button" value="5" onclick="fn('5')" />
+        <input type="button" value="6" onclick="fn('6')" />
+        <input type="button" value="/" onclick="fn('/')" />
+        <input type="button" value="7" onclick="fn('7')" />
+        <input type="button" value="8" onclick="fn('8')" />
+
+        <input type="button" value="%" onclick="fn('%')" />
+
+        <input type="button" value="9" onclick="fn('9')" />
+        <input type="button" value="0" onclick="fn('0')" />
+
+        <input type="button" value="." onclick="fn('.')" />
+
+        <input type="button" value="(" onclick="fn('(')" />
+        <input type="button" value=")" onclick="fn(')')" />
+
+        <input type="button" value="=" onclick="Result('=')" />
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
